@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Righteous&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.MuiLink-root {
+  color: black;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Background image */
+.Background-overlay {
+  background-color: rgba(240, 186, 189, 0.1);
+  display: block;
+  content: '';
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -50;
+}
+
+.Background-image {
+  position: fixed;
+  z-index: -100;
+  opacity: 0.6;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Homepage */
+
+.Homepage-header {
+  font-family: 'Righteous', cursive;
+  color: #2a9d8f;
+  width: fit-content;
+  text-align: center;
+  font-size: 50px;
+  margin: auto;
+  margin-top: 10%;
+  padding-bottom: 20px;
+}
+
+.Homepage-header:hover {
+  cursor: pointer;
+}
+
+.Homepage-button {
+  border: none;
+  background: none;
+  border-radius: 50px;
+  margin: auto;
+  margin-left: 3%;
+  padding: 10px;
+}
+
+.Homepage-button:hover {
+  cursor: pointer;
+  background: rgba(0,0,0,0.32);
+}
+
+/* Search Bar */
+
+.Search-container {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: auto;
+  max-width: 900px;
+  margin: auto;
+  padding: 10px 20px 10px 30px;
+  border: 1px solid rgba(255, 255, 255);
+  border-radius: 50px;
+  column-gap: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.Price-slider {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 0 10px 0 10px;
+
+}
+
+.Price-slider-caption {
+  color: rgb(95, 95, 95);
+  text-align: center;
+}
+
+.Mobile-search-button {
+  display: none;
+  flex-direction: row;
+  border-radius: 40px;
+  background-color: white;
+  padding: 0 15px 0 15px;
+}
+
+.Mobile-search-button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.1);
+}
+
+.Mobile-search-button > #Search-button {
+  background-color: rgb(223, 174, 177);
+}
+
+.Mobile-search-text {
+  color:rgba(0, 0, 0);
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+.Mobile-search-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.Mobile-search-container * {
+  width: 100%;
+}
+
+#Search-checkin, #Search-checkout {
+  width: 80px;
+}
+
+#Search-button {
+  margin: auto;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+#Search-button:hover {
+  cursor: pointer;
+  background-color: rgb(223, 174, 177);
+  padding: 10px;
+}
+
+
+/* .Homepage-nav:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(218, 218, 218, 0.32);
+  ;
+} */
+
+/* Nav Bar */
+#Nav-bar {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px 30px 30px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.Nav-menu, .Nav-menu-homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 90px;
+  border-radius: 50px;
+  color: grey;
+  column-gap: 10%;
+}
+
+.Nav-menu-homepage {
+  margin-left: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+}
+
+.Nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.Nav-logo {
+  width: 60px;
+  height: 60px;
+}
+
+#Nav-logo-text {
+  font-family: 'Righteous', cursive;
+  color: #2a9d8f;
+  font-size: 40px;
+}
+
+#Nav-logo-container:hover {
+  cursor: pointer;
+}
+
+#Nav-logo-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.Nav-search-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: auto;
+  max-width: 60%;
+  column-gap: 15px;
+}
+
+/* Listings */
+.Listing-box {
+  margin: 10px 0 10px 0;
+}
+
+.Listing-box:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.Listing-price {
+  margin-left: auto;
+}
+
+#Listings-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Listing Details */
+.Listing-title {
+  margin-bottom: 0;
+}
+
+.Listing-container {
+  padding: 15px;
+}
+
+.Listing-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.Listing-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Tiny-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.Listing-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.Booking-date-pickers {
+  margin: auto;
+}
+
+#Clear-dates-button {
+  text-decoration: underline;
+  font-family: arial;
+  font-size: 12px;
+}
+
+#Clear-dates-button:hover {
+  cursor: pointer;
+}
+
+/* Booking Confirmation */
+
+#Booking-confirmation-container {
+  text-align: center;
+}
+
+#Booking-confirmation-logo {
+  width: 40px;
+  left: 50%;
+}
+
+#Booking-confirmation-text {
+  text-align: left;
+  padding: 0 50px 0 50px;
+}
+
+#Check-availability-button {
+  margin: auto;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Reviews */
+.Review-header {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 20px 0 20px;
+}
+
+.Review-form-header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.Review-rating {
+  margin-left: auto;
+}
+
+.Review-content {
+  margin: 20px;
+}
+
+.Review-submit-rating {
+  margin: auto;
+  padding: 10px;
+}
+
+.Review-inputbox {
+  width: 90%;
+  padding: 20px;
+  margin: auto;
+}
+
+#Review-textfield {
+  width: 100vh;
+}
+
+#Review-post-button {
+  margin-left: 20px;
+}
+
+.Paper {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.Alert {
+  color: #e76f51;
+}
+
+@media only screen and (max-width: 900px) {
+  .Mobile-search-button {
+    display: flex;
+  }
+
+  .Nav-search-container {
+    display: none;
+  }
+}

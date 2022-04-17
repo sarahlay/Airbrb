@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "3d-react-carousal": "^4.0.2",
+    "@mui/lab": "^5.0.0-alpha.54",
+    "date-fns": "^2.25.0"
+  }
+}
